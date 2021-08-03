@@ -116,3 +116,9 @@ VLAN0001
              Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
              Aging Time  300 sec
 ```
+
+# Enlace Dell N1524 e Cisco 2960S
+
+Neste cenário os switches só interoperaram alterando o modo spanning-tree do Dell N1524 para PVRST, após seguir orientações da própria Dell. No entanto, essas alterações foram desfeitas e os equipamentos no fim das contas interoperaram simplesmente usando o modo RSTP - Rapid Spanning-tree.
+
+Resta monitorar e estudar mais esses padrões.
