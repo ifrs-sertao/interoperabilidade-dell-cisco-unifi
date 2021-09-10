@@ -1,6 +1,11 @@
 # interoperabilidade-dell-cisco-unifi
 Anotações sobre Interoperailidade entre swicthes Dell, Cisco e Unifi
 
+# Para acessar os switches Cisco 2950
+```shell
+ ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 admin@172.18.0.31
+```
+
 # Enlace Dell N2000 + Cisco 2960S
 
 
