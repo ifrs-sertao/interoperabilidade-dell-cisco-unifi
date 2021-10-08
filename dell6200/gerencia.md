@@ -26,3 +26,29 @@ sw-a14superior(config)#ip address vlan 4054
 sw-a14superior(config)#ip routing
 
 ```
+## Upgrade firmware para 3.3.18.1 remove acesso HTTP
+É um comportamento esperado já que o HTTP contém uma vulnerabilidade nesse equipamento. A alternativa é habilitar o HTTPS
+Comando para garantir que o HTTP esteja desativado:
+```shell
+sw-a14superior#show ip http
+
+HTTP Server is Disabled.  Port :  80
+
+
+```
+## Habilitar o HTTPS
+Segue os comando para gerar certificado e chave e ativar o HTTPs no Dell 6200
+```shell
+sw-a14superior#configure
+
+sw-a14superior(config)#crypto Certificate 2 generate
+
+sw-a14superior(config-crypto-cert)#key-generate
+
+sw-a14superior(config-crypto-cert)#exit
+
+sw-a14superior(config)#ip https certificate 2
+
+sw-a14superior(config)#ip https server
+
+```
