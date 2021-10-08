@@ -1,6 +1,9 @@
 # interoperabilidade-dell-cisco-unifi
 Anotações sobre Interoperailidade entre swicthes Dell, Cisco e Unifi
 
+# Sumário
+- [Dell6248 - Gerência e Comandos Úteis](https://github.com/ifrs-sertao/interoperabilidade-dell-cisco-unifi/blob/main/dell6200/gerencia.md)
+
 # Para acessar os switches Cisco 2950
 ```shell
  ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 admin@172.18.0.31
