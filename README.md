@@ -79,6 +79,9 @@ Appliance trust: none
 
 Por definição todas as portas do switches Unifi vem com a configuração ALL que indica que trata-se de uma porta Trunk (preparada para aceitar todas as VLAN taggeadas).
 
+![image](https://user-images.githubusercontent.com/6537456/138167646-6145bdb3-c599-4ab5-a94f-1716effc6277.png)
+
+
 Ao criar uma nova NETWORK e vincula-la a um VLAN ID é criado automaticamente um PROFILE. É nesse profile que se define a NATIVE VLAN e as TAGGED VLAN. Por padrão todas as VLANs, exceto a Native são taggead nesse PROFILE.
 
 # Spanning-tree
