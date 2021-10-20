@@ -77,7 +77,9 @@ Appliance trust: none
 
 ### Porta trunk(uplink) do Unifi US-8-150W
 
-A configuração pelo console Web dá entender que a porta fica como Trunk.
+Por definição todas as portas do switches Unifi vem com a configuração ALL que indica que trata-se de uma porta Trunk (preparada para aceitar todas as VLAN taggeadas).
+
+Ao criar uma nova NETWORK e vincula-la a um VLAN ID é criado automaticamente um PROFILE. É nesse profile que se define a NATIVE VLAN e as TAGGED VLAN. Por padrão todas as VLANs, exceto a Native são taggead nesse PROFILE.
 
 # Spanning-tree
 
